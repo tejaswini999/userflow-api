@@ -79,8 +79,6 @@ app.post('/login', (req, res, next) => {
                                 token: token,
                                 // newPassword : user[0].password
                             });
-                            user[0].password = req.body.newPassword;
-                            user[0].save()
                         }
                     }
                 );
